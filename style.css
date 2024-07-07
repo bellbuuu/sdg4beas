@@ -1,0 +1,164 @@
+@keyframes slide_up{
+    0%{
+        transform:translateY(300px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+@keyframes slide_right{
+    0%{
+        transform:translateX(-300px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+@keyframes slide_left{
+    0%{
+        transform:translateX(300px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(14, 10, 57);
+    color:white;
+    font-family: "Montserrat", sans-serif;
+     padding-top: 30px; 
+}
+.home h1{
+    position:fixed; text-shadow: 3px 3px 7px skyblue;
+    animation:slide_up 1.4s ease;
+}
+.menu{
+    padding-right: 30px;
+    display:flex;
+    gap:40px;
+    font-size: 20px;
+    font-weight: bold; float:right;
+    padding-left: 30px; animation:slide_up 1.4s ease;
+}
+.menu a, .menu spawn{
+    text-decoration: none;
+    color:white; cursor: pointer;
+}
+.menu a:hover,.menu spawn:hover{
+    color:lightpink;
+}
+.home{
+    padding-left: 30px; padding-right: 30px;
+}
+.problems{
+    background-color: lightblue; color:black;
+    max-width:600px;
+    padding:20px; padding-bottom: 1px;
+    font-size: 18px; border-radius: 20px; font-weight: bold;
+    transition: .4s ease; animation:slide_right 1.4s ease;
+}
+.solutions{
+    float:right;
+    background-color: lightseagreen; color:black;
+    max-width:600px; transition: .4s ease;
+    padding:20px; padding-bottom: 1px;
+    font-size: 18px; border-radius: 20px; font-weight: bold;
+    animation:slide_left 1.4s ease;
+}
+.solutions li, .problems li{
+    padding-bottom: 15px;
+}
+.problems:hover, .solutions:hover{
+    transform:scale(1.03);
+}
+.one{
+    padding-top: 100px;
+}
+.two img{
+    padding-top: 50px; padding-bottom: 160px;
+    padding-left: 30px;  height:200px; width:250px;
+}
+.one img{
+    height:200px; width:300px; float:right;
+    padding-right: 50px; padding-top: 40px;
+}
+.courses{
+   padding-bottom: 30px;
+    background-color: rgb(11, 59, 70); padding-left: 100px;
+}
+.inputarea{
+    padding-left: 50px; display:flex; gap:100px;
+}
+.inputarea input{
+   background-color: skyblue; border:none; padding:5px;
+}
+
+.courses hey{
+    padding-left: 170px;
+}
+.courses button{
+    width:200px; padding:5px; 
+    background-color: aquamarine; border-radius: 20px;
+    font-size: 15px; font-weight: bold;
+    border:none; cursor:pointer; transition: .3s;
+}
+.courses button a{
+    text-decoration: none; 
+}
+.courses button a:hover{
+    color:rgb(129, 129, 129);
+}
+.courses button:hover{
+  transform: scale(1.1); color:rgb(129, 129, 129);
+}
+.courses h2{
+    text-decoration:underline;
+}
+.courses img{
+    height:200px; width:320px;
+}
+.hey2{
+    display:flex; gap:60px;
+}
+.about hey3{
+    width:400px; border-radius: 15px; background-color: rgb(88, 103, 117);
+    text-shadow: 3px 3px 3px black; padding:20px; 
+    float:right; text-align: center; font-size: 17px; transition:.4s ease;
+}
+.about{
+    padding-right: 40px; padding-bottom: 30px;
+}
+.about a{
+    text-decoration: none; font-weight: bold; color:white;
+    text-shadow: 3px 3px 3px black;
+}
+.about hey3:hover{
+    transform: scale(1.03);
+}
+.socials{
+    position:absolute; padding-left: 92%; padding-top: 3%; 
+    display:none;
+}
+.socials a i{
+    color:white;
+}
+.socials a i:hover{
+    color:lightpink;
+}
+.socials a{
+    font-size: 30px;
+}
+.contact{
+    padding-top:300px; padding-left: 100px; padding-right: 50px;
+    display:flex; 
+    gap:200px; cursor:pointer;
+}
+.contact a{
+     color:white;
+}
+.contact h3:hover{
+    color:gray;
+}
